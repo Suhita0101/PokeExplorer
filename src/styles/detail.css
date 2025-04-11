@@ -1,0 +1,290 @@
+/* ===== DETAIL PAGE LAYOUT ===== */
+.detail-container {
+  display: flex;
+  gap: 30px;
+}
+
+.sidebar {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.detail-content {
+  flex-grow: 1;
+}
+
+/* Back button */
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #4b5563;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.back-button:hover {
+  background-color: #f3f4f6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.back-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Pokemon detail card */
+.pokemon-detail-card {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.detail-header {
+  position: relative;
+  display: flex;
+  padding: 40px;
+  gap: 30px;
+  align-items: center;
+  background-color: #f8fafc;
+}
+
+/* We'll use the same color logic from the card component but for the detail header */
+.pokemon-detail-card[data-type="grass"] .detail-header { background: linear-gradient(135deg, #8bbe8a, #4caf50); }
+.pokemon-detail-card[data-type="fire"] .detail-header { background: linear-gradient(135deg, #ffa756, #ff6b6b); }
+.pokemon-detail-card[data-type="water"] .detail-header { background: linear-gradient(135deg, #58abf6, #2196f3); }
+.pokemon-detail-card[data-type="bug"] .detail-header { background: linear-gradient(135deg, #8bd674, #4caf50); }
+.pokemon-detail-card[data-type="normal"] .detail-header { background: linear-gradient(135deg, #b5b9c4, #9e9e9e); }
+.pokemon-detail-card[data-type="poison"] .detail-header { background: linear-gradient(135deg, #9f6e97, #7b1fa2); }
+.pokemon-detail-card[data-type="electric"] .detail-header { background: linear-gradient(135deg, #ffe662, #ffeb3b); }
+.pokemon-detail-card[data-type="ground"] .detail-header { background: linear-gradient(135deg, #dd7748, #795548); }
+.pokemon-detail-card[data-type="fairy"] .detail-header { background: linear-gradient(135deg, #eca8c3, #f48fb1); }
+.pokemon-detail-card[data-type="fighting"] .detail-header { background: linear-gradient(135deg, #eb4971, #f44336); }
+.pokemon-detail-card[data-type="psychic"] .detail-header { background: linear-gradient(135deg, #ff6675, #e91e63); }
+.pokemon-detail-card[data-type="rock"] .detail-header { background: linear-gradient(135deg, #c5b78c, #795548); }
+.pokemon-detail-card[data-type="ghost"] .detail-header { background: linear-gradient(135deg, #8571be, #673ab7); }
+.pokemon-detail-card[data-type="ice"] .detail-header { background: linear-gradient(135deg, #8cf5e4, #00bcd4); }
+.pokemon-detail-card[data-type="dragon"] .detail-header { background: linear-gradient(135deg, #7383b9, #3f51b5); }
+.pokemon-detail-card[data-type="dark"] .detail-header { background: linear-gradient(135deg, #6e7587, #424242); }
+.pokemon-detail-card[data-type="steel"] .detail-header { background: linear-gradient(135deg, #4c91b2, #2196f3); }
+.pokemon-detail-card[data-type="flying"] .detail-header { background: linear-gradient(135deg, #c3b8f5, #9c27b0); }
+
+.detail-image-container {
+  flex-shrink: 0;
+}
+
+.detail-image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+}
+
+.detail-title-container {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.detail-title {
+  font-size: 2.5rem;
+  margin: 0 0 10px;
+}
+
+.detail-id {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.detail-types {
+  margin: 0;
+  gap: 10px;
+}
+
+.detail-types .type-badge {
+  padding: 6px 16px;
+  font-size: 0.9rem;
+}
+
+/* Detail sections */
+.detail-section {
+  padding: 30px 40px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.detail-section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #1f2937;
+  margin: 0 0 20px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #8b5cf6;
+  border-radius: 10px;
+}
+
+/* Stats bars */
+.stats-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stat-name {
+  width: 80px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.stat-value-numeric {
+  width: 40px;
+  font-weight: 700;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-bar-container {
+  flex-grow: 1;
+  height: 10px;
+  background-color: #e5e7eb;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.stat-bar {
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* Physical characteristics */
+.detail-physical-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.physical-item {
+  background-color: #f9fafb;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.physical-item h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.physical-item p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* Abilities */
+.abilities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.ability-item {
+  background-color: #f3f4f6;
+  padding: 12px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ability-item h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+.hidden-badge {
+  background-color: #8b5cf6;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Moves */
+.moves-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.move-badge {
+  background-color: #e5e7eb;
+  color: #4b5563;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.move-badge:hover {
+  background-color: #d1d5db;
+  transform: translateY(-2px);
+}
+
+.more-moves {
+  background-color: #dbeafe;
+  color: #3b82f6;
+}
+
+/* Responsive adaptations */
+@media (max-width: 860px) {
+  .detail-container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+  }
+  
+  .detail-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .detail-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
