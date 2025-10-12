@@ -1,59 +1,58 @@
-# Web Development Project 6 - PokeExplorer
+# 🐉 PokeExplorer
 
-Submitted by: Suhita Maddukuri
+PokeExplorer is an interactive data visualization web app that allows users to explore and learn about different Pokémon species through an intuitive dashboard and dynamic charts. It combines data exploration, interactive navigation, and clean visual design to make discovering Pokémon fun and insightful.
 
-This web app: This web page has information about different kinds of pokemons
+✨ Features
+- 📜 Dashboard View:
+Displays a list of Pokémon with key information at a glance.
+- 🔍 Detail View with Unique URLs:
+Clicking on a Pokémon navigates to a dedicated detail page with extended information and a unique URL, making it easy to share or revisit individual Pokémon pages.
+- 📊 Data Visualizations:
+Two unique charts give an overview of different Pokémon attributes (e.g., type distribution, stats comparison).
+Charts help users explore the dataset in an interactive and meaningful way.
+- 🧭 Persistent Sidebar:
+A sidebar remains visible across all views, allowing easy navigation between dashboard and detail pages.
 
-Time spent: 8 hours spent in total
+🧰 Tech Stack
+- Frontend: HTML, CSS, JavaScript
+- Build Tool: Vite
+- Runtime: Node.js
 
-## Required Features
+📸 Screenshots
 
-The following **required** functionality is completed:
+<img width="1465" height="739" alt="Screenshot 2025-10-12 at 6 59 36 PM" src="https://github.com/user-attachments/assets/18fdc929-a469-44cd-b9aa-798c417e6b91" />
 
-- [X] **Clicking on an item in the list view displays more details about it**
-  - Clicking on an item in the dashboard list navigates to a detail view for that item
-  - Detail view includes extra information about the item not included in the dashboard view
-  - The same sidebar is displayed in detail view as in dashboard view
-  - *To ensure an accurate grade, your sidebar **must** be viewable when showing the details view in your recording.*
-- [X] **Each detail view of an item has a direct, unique URL link to that item’s detail view page**
-  -  *To ensure an accurate grade, the URL/address bar of your web browser **must** be viewable in your recording.*
-- [X] **The app includes at least two unique charts developed using the fetched data that tell an interesting story**
-  - At least two charts should be incorporated into the dashboard view of the site
-  - Each chart should describe a different aspect of the dataset
+<img width="1470" height="798" alt="Screenshot 2025-10-12 at 7 00 19 PM" src="https://github.com/user-attachments/assets/ce143788-60c3-4af8-8718-994d2d3ba45f" />
 
+<img width="1470" height="795" alt="Screenshot 2025-10-12 at 7 00 37 PM" src="https://github.com/user-attachments/assets/0ad90631-c205-4843-8d08-f5c60d8c7ae6" />
 
-The following **optional** features are implemented:
+🧭 Getting Started
+Follow the steps below to run this project locally on your machine.
 
-- [ ] The site’s customized dashboard contains more content that explains what is interesting about the data 
-  - e.g., an additional description, graph annotation, suggestion for which filters to use, or an additional page that explains more about the data
-- [ ] The site allows users to toggle between different data visualizations
-  - User should be able to use some mechanism to toggle between displaying and hiding visualizations 
+1️⃣ Download the Project:
+- Click the green “Code” button on GitHub and select “Download ZIP”, then unzip the file.
 
-  
-The following **additional** features are implemented:
+2️⃣ Open the Project Folder in Terminal
+- cd hobbyhub
 
-* [ ] List anything else that you added to improve the site's functionality!
+3️⃣ Install Dependencies
+- Make sure Node.js and npm are installed:
+node -v
+npm -v
+- If you see “command not found”, download Node.js and install it.
+- Then install the required dependencies:
+npm install
 
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-https://www.loom.com/share/f3e20874e477473fb07b410349488ed7?sid=d5a7fc1d-872f-40d3-83fd-02c39ca0a4a2
-
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
-
-## Notes
-
-Describe any challenges encountered while building the app.
+4️⃣ Start the Development Server
+npm run dev
+- Once the server starts, you’ll see a local development URL like:
+http://localhost:5173/
+- 🖥 Mac users: Cmd + click the link or copy and paste it into your browser.
+- 💻 Windows users: Ctrl + click the link or copy and paste it into your browser.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2025 Suhita Maddukuri
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
